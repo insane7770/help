@@ -1,0 +1,20 @@
+using System;
+
+namespace _01.Ceremony
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int rent = int.Parse(Console.ReadLine());
+
+            double statuetki = rent * 0.7;
+            double catering = rent * 0.85;
+            double sound = catering / 2;
+
+            double finalPrice = rent + statuetki + catering + sound;
+
+            Console.WriteLine($"{finalPrice:F2}");
+        }
+    }
+}
